@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+span{
+    font-size: 0.6rem;
+}
+
+
+img{
+    width: 40px;
+    cursor: pointer;
+}
+
+img:hover{
+    width: 60px;
+    transition: 0.4s;
+}
+
+.motion__jugador{
+  
+        position: absolute;
+        left: 32vw;
+        top: 42vh;
+        display: grid;
+        place-items: center;
+}
+.motion__pc{
+  
+        position: absolute;
+        right: 32vw;
+        top: 42vh;
+        display: grid;
+        place-items: center;
+}
+
+button {
+    background: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    border: none;
+}
+
+@media (min-width: 920px) {
+    img{
+        width: 70px;
+    }
+    img:hover{
+        width: 100px;
+       
+    }
+      
+}
+
+@media (max-width: 600px) {
+    
+    span{
+        font-size: 0.5rem;
+    }
+    .pokemon__card{
+        width: 80px;
+        height: 70px;
+        transition: 0.5s;
+    }
+    img{
+        width: 65px;
+    }
+    .pokemon__card:hover{
+        height: 75px;
+        transition: 0.5s;
+       
+    }
+    .motion__jugador{
+  
+        position: absolute;
+        left: 12vw;
+        top: 45vh;
+    }
+
+    .motion__pc{
+  
+        position: absolute;
+        right: 12vw;
+        top: 45vh;
+    }
+      
+}
+
+@media (max-width: 370px) {
+    
+  
+    .pokemon__card{
+        width: 60px;
+        height: 50px;
+        transition: 0.3s;
+    }
+  
+    .pokemon__card:hover{
+        height: 60px;
+        transition: 0.5s;
+       
+    }
+    .motion__jugador{
+  
+        position: absolute;
+        left: 15vw;
+        top: 50vh;
+    }
+
+    .motion__pc{
+  
+        position: absolute;
+        right: 15vw;
+        top: 50vh;
+    }
+      
+}
+
